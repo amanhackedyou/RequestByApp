@@ -1,10 +1,10 @@
-Hello It is come from Github by Aman Programmer.
+<body>Hello It is come from Github by Aman Programmer.<body>
 <script>
 let curl = window.location.href;
   
 var url = new URL(curl);
 var name = url.searchParams.get("Name");
 var prf = url.searchParams.get("Prof");
-document.writeIn(name);
-document.writeIn(prf);
+document.body.innerHTML += name;
+document.body.innerHTML += prf;
 </script>
