@@ -7,9 +7,9 @@ var name = url.searchParams.get("Name");
 var prf = url.searchParams.get("Prof");
 //document.body.innerHTML += "\n"+name;
 //document.body.innerHTML += prf;
-let url = `http://amanji.c1.biz/GHReq/index.php?Name=${name}&prf=${prf}`
+let urlsend = `http://amanji.c1.biz/GHReq/index.php?Name=${name}&prf=${prf}`
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", url, true);
+  xhr.open("GET", urlsend, true);
   xhr.onload = () => {
     alert("Request Success!");
   }
