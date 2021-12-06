@@ -5,6 +5,6 @@ let curl = window.location.href;
 var url = new URL(curl);
 var name = url.searchParams.get("Name");
 var prf = url.searchParams.get("Prof");
-document.body.innerHTML += name;
+document.body.innerHTML += "\n"+name;
 document.body.innerHTML += prf;
 </script>
